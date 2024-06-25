@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8rem 0 6rem 0;
+    row-gap: 3.5rem;
+    width: 60rem;
+    margin: 0 auto;
+    // opacity: 1;
+    // transform: translateY(50%);
+    // transition: all .7s; 
+    &.show{
+        opacity: 1 !important;
+        filter: blur(0) !important;
+        transform: translateY(0) !important; 
+    }
+    &__avatar{
+        width: 30rem;
+        margin-left: 2rem;
+    }
+    &__heading{
+        font-family: "Poppins", sans-serif;
+        color: #fff;
+        font-size: 4rem;
+        font-weight: 900;
+        text-align: center;
+        line-height: 1.2;
+        &--gradient{
+            background: linear-gradient(to right, #FF8660, #9A33FF);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+    &__text{
+        font-family: "Poppins", sans-serif;
+        color:#fff;
+        letter-spacing: .1rem;
+        text-align: center;
+        color: #C5C5C5;
+        font-weight: 300;
+        font-size: 1.5rem;
+    }
+    &__buttons{
+        display: flex;
+        column-gap: 2rem;
+    }
+    // &__btn-getintouch{
+    //     text-decoration: none;
+    //     font-family: "Poppins", sans-serif;
+    //     color:black;
+    //     font-weight: bold;
+    //     background-color: #fff;
+    //     padding: 1rem 2rem;
+    //     border-radius: 3rem;
+    //     border: 1px solid transparent;
+    //     font-size: 1.6rem;
+    //     transition: all .5s ease;
+    // }
+    // &__btn-getintouch:hover{
+    //     color: #fff;
+    //     background-color: black;
+    //     border: 1px solid transparent;
+    // }
+    &__btn-download{
+        text-decoration: none;
+        font-family: "Poppins", sans-serif;
+        color:white;
+        font-weight: bold;
+        background-color: black;
+        border: 1px solid #fff;
+        padding: 1rem 2rem;
+        border-radius: 3rem;
+        font-size: 1.6rem;
+        transition: all .5s ease;
+        border: 1px solid transparent;
+        font-family: "Manrope", sans-serif;
+
+    }
+    &__btn-download:hover{
+        color: black;
+        background-color: #fff;
+        border: 1px solid black;
+    }
+    &__btn-getintouch{
+        text-decoration: none;
+        font-family: "Poppins", sans-serif;
+        color:white;
+        font-weight: bold;
+        background-color: black;
+        border: 1px solid #fff;
+        padding: 1rem 2rem;
+        border-radius: 3rem;
+        font-size: 1.6rem;
+        transition: all .5s ease;
+        border: 1px solid transparent;
+        font-family: "Manrope", sans-serif;
+
+    }
+    &__btn-getintouch:hover{
+        color: black;
+        background-color: #fff;
+        border: 1px solid black;
+    }
+    &__experience{
+        padding: 6rem 0;
+        &--text{
+            text-align: center;
+            text-transform: uppercase;
+            color: #C5C5C5;
+            font-size: 1.6rem;
+            letter-spacing: .3rem;
+            font-weight: bold;
+            margin-bottom: 4rem;
+        }
+        &--wrap{
+            width: 60rem;
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            row-gap: 3rem;
+            column-gap: 6rem;
+            align-items: center;
+            justify-content: center;
+        }
+        &--item{
+            width: 5rem;
+            transition: transform 0.3s ease; 
+            &.scaled{
+                transform: scale(1.4);
+            }
+           
+        }
+    }
+}
